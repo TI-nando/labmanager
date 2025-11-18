@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="2300" viewBox="0 0 1800 2300">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4f5f7"/>
+      <stop offset="100%" stop-color="#eef2f7"/>
+    </linearGradient>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a7f3d0"/>
+      <stop offset="100%" stop-color="#c7d2fe"/>
+    </linearGradient>
+    <linearGradient id="archGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feOffset dx="0" dy="4" result="off"/>
+      <feGaussianBlur in="off" stdDeviation="8" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+      <feBlend in="SourceGraphic" in2="blur" mode="normal"/>
+    </filter>
+    <style type="text/css">
+      .card { rx: 18; filter: url(#shadow); }
+      .title { font-family: Inter, Arial, sans-serif; font-size: 30px; font-weight: 800; fill: #0f172a; }
+      .subtitle { font-family: Inter, Arial, sans-serif; font-size: 20px; font-weight: 700; fill: #1f2937; }
+      .text { font-family: Inter, Arial, sans-serif; font-size: 16px; fill: #111827; }
+      .chip { font-family: Inter, Arial, sans-serif; font-size: 13px; font-weight: 700; fill: #fff; }
+    </style>
+  </defs>
+  <rect x="0" y="0" width="1800" height="2300" fill="url(#bgGrad)"/>
+  <g id="grid" opacity="0.12" style="pointer-events:none">
+    <rect x="80" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="218" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="356" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="494" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="632" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="770" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="908" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="1046" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="1184" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="1322" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="1460" y="80" width="122" height="2100" fill="#94a3b8"/>
+    <rect x="1598" y="80" width="122" height="2100" fill="#94a3b8"/>
+  </g>
+
+  <rect x="80" y="80" width="1640" height="260" fill="url(#headerGrad)" class="card"/>
+  <text x="110" y="140" class="title" fill="#0f172a">LabManager — Cartão de Identidade</text>
+  <text x="110" y="180" class="subtitle" fill="#1f2937">Pitch</text>
+  <text x="110" y="206" class="text" fill="#111827">Gestão de estoque para laboratórios químicos</text>
+  <text x="110" y="232" class="text" fill="#111827">Foco em confiabilidade e controle.</text>
+  <text x="110" y="262" class="subtitle" fill="#1f2937">Tech Stack</text>
+  <text x="250" y="262" class="text" fill="#111827">React (Vite) • Node/Express • MySQL (SQL puro) • mysql2</text>
+  
+
+  <rect x="80" y="360" width="1640" height="420" fill="url(#archGrad)" class="card"/>
+  <text x="110" y="410" class="title" fill="#0f172a">Arquitetura do Sistema</text>
+  <rect x="130" y="450" width="320" height="160" fill="#e0f2fe" class="card"/>
+  <text x="150" y="490" class="subtitle" fill="#0f172a">React (Vite)</text>
+  <text x="150" y="520" class="text" fill="#334155">UI, fetch e estado</text>
+  <rect x="520" y="450" width="360" height="160" fill="#ede9fe" class="card"/>
+  <text x="540" y="490" class="subtitle" fill="#0f172a">Node.js + Express</text>
+  <text x="540" y="520" class="text" fill="#334155">Roteamento, validação</text>
+  <rect x="930" y="450" width="280" height="160" fill="#cffafe" class="card"/>
+  <text x="950" y="490" class="subtitle" fill="#0f172a">mysql2 (pool)</text>
+  <text x="950" y="520" class="text" fill="#334155">Prepared statements</text>
+  <rect x="1240" y="450" width="460" height="160" fill="#dcfce7" class="card"/>
+  <text x="1260" y="490" class="subtitle" fill="#064e3b">MySQL</text>
+  <text x="1260" y="520" class="text" fill="#064e3b">DDL, índices, transações</text>
+  <circle cx="470" cy="530" r="8" fill="#64748b"/>
+  <circle cx="895" cy="530" r="8" fill="#64748b"/>
+  <circle cx="1210" cy="530" r="8" fill="#64748b"/>
+  <path d="M 478 530 L 520 530" stroke="#64748b" stroke-width="3"/>
+  <path d="M 903 530 L 930 530" stroke="#64748b" stroke-width="3"/>
+  <path d="M 1218 530 L 1240 530" stroke="#64748b" stroke-width="3"/>
+  <text x="110" y="650" class="text" fill="#111827">Fluxo: React → API Node/Express → mysql2 → MySQL. Sem ORM, foco didático.</text>
+  <text x="110" y="690" class="text" fill="#111827">Respostas padronizadas e HTTP; transações garantem consistência de estoque.</text>
+
+  <text x="80" y="820" class="title">O Sprint de 7 Dias</text>
+  <rect x="80" y="860" width="398" height="420" fill="#fde68a" class="card"/>
+  <text x="110" y="900" class="subtitle" fill="#111827">Dia 1 — Fundação</text>
+  <circle cx="120" cy="940" r="7" fill="#6b7280"/>
+  <text x="150" y="948" class="text">Modelar tabelas: produtos, lotes, movimentos</text>
+  <circle cx="120" cy="980" r="7" fill="#6b7280"/>
+  <text x="150" y="988" class="text">Criar DDL e índices críticos</text>
+  <circle cx="120" cy="1020" r="7" fill="#6b7280"/>
+  <text x="150" y="1028" class="text">Configurar .env e credenciais</text>
+
+  <rect x="494" y="860" width="398" height="420" fill="#c7d2fe" class="card"/>
+  <text x="520" y="900" class="subtitle" fill="#0f172a">Dia 2 — Back-end</text>
+  <circle cx="530" cy="940" r="7" fill="#475569"/>
+  <text x="560" y="948" class="text" fill="#111827">Node + Express base, CORS, JSON</text>
+  <circle cx="530" cy="980" r="7" fill="#475569"/>
+  <text x="560" y="988" class="text" fill="#111827">mysql2 pool e health check</text>
+  <circle cx="530" cy="1020" r="7" fill="#475569"/>
+  <text x="560" y="1028" class="text" fill="#111827">Estrutura de erros e logs</text>
+
+  <rect x="908" y="860" width="398" height="420" fill="#a7f3d0" class="card"/>
+  <text x="930" y="900" class="subtitle" fill="#0f172a">Dia 3 — API CRUD</text>
+  <circle cx="940" cy="940" r="7" fill="#475569"/>
+  <text x="960" y="948" class="text" fill="#111827">Produtos/Lotes: listar/criar/editar</text>
+  <circle cx="940" cy="980" r="7" fill="#475569"/>
+  <text x="960" y="988" class="text" fill="#111827">Validação server-side</text>
+  <circle cx="940" cy="1020" r="7" fill="#475569"/>
+  <text x="960" y="1028" class="text" fill="#111827">Mapeamento de códigos HTTP</text>
+
+  <rect x="1322" y="860" width="398" height="420" fill="#fecdd3" class="card"/>
+  <text x="1340" y="900" class="subtitle" fill="#0f172a">Dia 4 — Regras</text>
+  <circle cx="1350" cy="940" r="7" fill="#475569"/>
+  <text x="1370" y="948" class="text" fill="#111827">Movimentações com transações</text>
+  <circle cx="1350" cy="980" r="7" fill="#475569"/>
+  <text x="1370" y="988" class="text" fill="#111827">Impedir estoque negativo</text>
+  <circle cx="1350" cy="1020" r="7" fill="#475569"/>
+  <text x="1370" y="1028" class="text" fill="#111827">Logs e idempotência básica</text>
+
+  <rect x="80" y="1300" width="536" height="420" fill="#a5f3fc" class="card"/>
+  <text x="110" y="1340" class="subtitle" fill="#0f172a">Dia 5 — Interface</text>
+  <circle cx="120" cy="1380" r="7" fill="#475569"/>
+  <text x="150" y="1388" class="text" fill="#111827">Vite + React, roteamento</text>
+  <circle cx="120" cy="1420" r="7" fill="#475569"/>
+  <text x="150" y="1428" class="text" fill="#111827">Layout base e navegação</text>
+  <circle cx="120" cy="1460" r="7" fill="#475569"/>
+  <text x="150" y="1468" class="text" fill="#111827">Componentes para listas/forms</text>
+
+  <rect x="632" y="1300" width="536" height="420" fill="#ddd6fe" class="card"/>
+  <text x="700" y="1340" class="subtitle" fill="#0f172a">Dia 6 — Consumo</text>
+  <circle cx="710" cy="1380" r="7" fill="#475569"/>
+  <text x="740" y="1388" class="text" fill="#111827">Fetch + AbortController</text>
+  <circle cx="710" cy="1420" r="7" fill="#475569"/>
+  <text x="740" y="1428" class="text" fill="#111827">Estado, paginação e filtros</text>
+  <circle cx="710" cy="1460" r="7" fill="#475569"/>
+  <text x="740" y="1468" class="text" fill="#111827">Otimizações e cache simples</text>
+
+  <rect x="1184" y="1300" width="536" height="420" fill="#bbf7d0" class="card"/>
+  <text x="1290" y="1340" class="subtitle" fill="#0f172a">Dia 7 — Polimento</text>
+  <circle cx="1300" cy="1380" r="7" fill="#475569"/>
+  <text x="1320" y="1388" class="text" fill="#111827">Tratamento de erros e UX</text>
+  <circle cx="1300" cy="1420" r="7" fill="#475569"/>
+  <text x="1320" y="1428" class="text" fill="#111827">CSS, acessibilidade</text>
+  <circle cx="1300" cy="1460" r="7" fill="#475569"/>
+  <text x="1320" y="1468" class="text" fill="#111827">Edge cases e testes</text>
+
+  <rect x="80" y="1740" width="1640" height="360" fill="#f3f4f6" class="card"/>
+  <text x="110" y="1780" class="title" fill="#0f172a">Aprendizados Chave</text>
+  <rect x="80" y="1805" width="398" height="260" fill="#fde68a" rx="16"/>
+  <text x="100" y="1840" class="subtitle" fill="#0f172a">SQL Injection</text>
+  <text x="100" y="1880" class="text" fill="#111827">Prepared statements e validação</text>
+  <rect x="494" y="1805" width="398" height="260" fill="#c7d2fe" rx="16"/>
+  <text x="514" y="1840" class="subtitle" fill="#0f172a">Transações</text>
+  <text x="514" y="1880" class="text" fill="#111827">Locks e isolamento</text>
+  <rect x="908" y="1805" width="398" height="260" fill="#a5f3fc" rx="16"/>
+  <text x="928" y="1840" class="subtitle" fill="#0f172a">CORS</text>
+  <text x="928" y="1880" class="text" fill="#111827">Política de origem e pré-flight</text>
+  <rect x="1322" y="1805" width="398" height="260" fill="#bbf7d0" rx="16"/>
+  <text x="1342" y="1840" class="subtitle" fill="#0f172a">Estado no React</text>
+  <text x="1342" y="1880" class="text" fill="#111827">AbortController e UX</text>
+
+  
+</svg>
